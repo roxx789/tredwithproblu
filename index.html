@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trading Community</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '2027397264819185');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+</script>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+color:white;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+/* TOP BAR */
+.topbar{
+background:#ffd700;
+color:#000;
+padding:12px;
+font-weight:900;
+font-size:17px;
+}
+
+/* PROFILE */
+.profile{
+margin-top:25px;
+}
+.profile img{
+width:130px;
+height:130px;
+border-radius:50%;
+border:5px solid #ffd700;
+}
+
+/* TEXT */
+.title{
+font-size:24px;
+font-weight:900;
+margin-top:10px;
+color:#ffd700;
+}
+.subtitle{
+font-size:16px;
+font-weight:700;
+}
+.counter{
+margin-top:8px;
+font-weight:700;
+}
+
+/* BOX */
+.box{
+background:rgba(0,0,0,0.4);
+margin:12px 20px;
+padding:12px;
+border-radius:10px;
+font-weight:700;
+}
+
+/* BUTTON */
+.join-btn{
+background:#ffd700;
+color:#000;
+padding:16px;
+margin:20px;
+border-radius:12px;
+font-size:18px;
+font-weight:900;
+cursor:pointer;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.05)}
+100%{transform:scale(1)}
+}
+
+/* ADS */
+.ads{
+margin:20px 0;
+}
+.ads a{
+background:black;
+color:#ffd700;
+padding:10px 18px;
+border-radius:20px;
+text-decoration:none;
+font-size:13px;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+background:#000;
+color:#ccc;
+font-size:12px;
+padding:14px;
+line-height:1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="profile">
+<img src="profile.jpg" alt="Profile">
+</div>
+
+<div class="title">Trade With Mohit Agrawal</div>
+<div class="subtitle">Market Insights & Learning</div>
+<div class="counter">👥 2,300+ traders joined today</div>
+
+<div class="box">📊 Market Analysis & Learning</div>
+<div class="box">📈 Intraday & Options Discussion</div>
+<div class="box">📚 14+ Years Market Experience</div>
+
+<div class="join-btn" id="joinBtn">JOIN TELEGRAM CHANNEL</div>
+
+<div class="ads">
+<a href="https://t.me/+GZeKfXdd9lIxZTJl">Advertised by elitemarketing.tech</a>
+</div>
+
+<script>
+const tgLink="https://t.me/+FbqZCLER6y4zYTBl";
+
+document.getElementById("joinBtn").addEventListener("click",function(){
+fbq('track','Lead',{ value:10, currency:'INR' });
+window.location.href = tgLink;
+});
+</script>
+
+<div class="disclaimer">
+<strong>Disclaimer:</strong><br>
+This community is for educational and informational purposes only.
+We do not provide financial or investment advice.
+Trading in financial markets involves risk.
+Always consult a qualified financial advisor before making any investment decisions.
+</div>
+
+</body>
+</html>
