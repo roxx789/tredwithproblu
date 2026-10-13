@@ -1,161 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero To Zero - Official Telegram Channel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // Yahan YOUR_PIXEL_ID ki jagah apna Pixel ID daalein
+    fbq('init', 'YOUR_PIXEL_ID'); 
+    
+    // PageView Event (Jab bhi koi page par aayega)
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
-<title>Trading Community</title>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '2027397264819185');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
-
-<style>
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-color:white;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
-
-/* TOP BAR */
-.topbar{
-background:#ffd700;
-color:#000;
-padding:12px;
-font-weight:900;
-font-size:17px;
-}
-
-/* PROFILE */
-.profile{
-margin-top:25px;
-}
-.profile img{
-width:130px;
-height:130px;
-border-radius:50%;
-border:5px solid #ffd700;
-}
-
-/* TEXT */
-.title{
-font-size:24px;
-font-weight:900;
-margin-top:10px;
-color:#ffd700;
-}
-.subtitle{
-font-size:16px;
-font-weight:700;
-}
-.counter{
-margin-top:8px;
-font-weight:700;
-}
-
-/* BOX */
-.box{
-background:rgba(0,0,0,0.4);
-margin:12px 20px;
-padding:12px;
-border-radius:10px;
-font-weight:700;
-}
-
-/* BUTTON */
-.join-btn{
-background:#ffd700;
-color:#000;
-padding:16px;
-margin:20px;
-border-radius:12px;
-font-size:18px;
-font-weight:900;
-cursor:pointer;
-animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.05)}
-100%{transform:scale(1)}
-}
-
-/* ADS */
-.ads{
-margin:20px 0;
-}
-.ads a{
-background:black;
-color:#ffd700;
-padding:10px 18px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-}
-
-/* DISCLAIMER */
-.disclaimer{
-background:#000;
-color:#ccc;
-font-size:12px;
-padding:14px;
-line-height:1.6;
-}
-</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #2b1021 0%, #150811 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(30, 10, 20, 0.7);
+            border-radius: 24px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 105, 180, 0.2);
+        }
+        .profile-container {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
+            box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
+        }
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .badge-channel {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 105, 180, 0.1);
+            border: 1px solid rgba(255, 105, 180, 0.4);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #ffb6c1;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        h1 span {
+            color: #ff69b4;
+            display: block;
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: -5px;
+        }
+        .sub-desc {
+            font-size: 12px;
+            color: #e0d0d8;
+            margin: 15px 0 25px;
+            line-height: 1.6;
+            padding: 0 10px;
+        }
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: linear-gradient(90deg, #ff69b4, #ff1493);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            box-shadow: 0 8px 20px rgba(255, 20, 147, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(255, 20, 147, 0.6);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        .feature-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 105, 180, 0.2);
+            border-radius: 16px;
+            padding: 15px 10px;
+            text-align: center;
+        }
+        .feature-box .icon {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .feature-box h4 {
+            font-size: 11px;
+            color: #ffffff;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .stats-row {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+        .stat-item h3 {
+            font-size: 14px;
+            color: #ff69b4;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .stat-item p {
+            font-size: 10px;
+            color: #b0a0a8;
+            letter-spacing: 0.5px;
+        }
+        .disclaimer {
+            font-size: 9px;
+            color: #9a8a92;
+            line-height: 1.5;
+            text-align: justify;
+            padding: 0 5px;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="profile">
-<img src="profile.jpg" alt="Profile">
-</div>
+    <div class="container">
+        <!-- Profile Logo -->
+        <div class="profile-container">
+            <div class="profile-img">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="#ff1493"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+        </div>
 
-<div class="title">Trade With Mohit Agrawal</div>
-<div class="subtitle">Market Insights & Learning</div>
-<div class="counter">👥 2,300+ traders joined today</div>
+        <!-- Channel Badge -->
+        <div class="badge-channel">
+            ♡ OFFICIAL TELEGRAM CHANNEL ♡
+        </div>
 
-<div class="box">📊 Market Analysis & Learning</div>
-<div class="box">📈 Intraday & Options Discussion</div>
-<div class="box">📚 14+ Years Market Experience</div>
+        <!-- Heading -->
+        <h1>Trade With <span>Purab</span></h1>
 
-<div class="join-btn" id="joinBtn">JOIN TELEGRAM CHANNEL</div>
+        <!-- Sub Description -->
+        <div class="sub-desc">
+            Daily Updates • Strategy Discussions • Market Trends • Educational Content
+        </div>
 
-<div class="ads">
-<a href="https://t.me/+GZeKfXdd9lIxZTJl">Advertised by elitemarketing.tech</a>
-</div>
+        <!-- CTA Button with Pixel Lead Tracking -->
+        <div class="sub-desc" style="color:#ffb6c1; margin-bottom: 10px;">Free Joining Available</div>
+        <a href="https://t.me/+3jbszPRuO3FhMjZl" onclick="trackLeadEvent()" class="cta-button">
+            JOIN TELEGRAM →
+        </a>
 
-<script>
-const tgLink="https://t.me/+FbqZCLER6y4zYTBl";
+        <!-- Feature Boxes -->
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="icon">🌸</div>
+                <h4>DAILY UPDATES</h4>
+            </div>
+            <div class="feature-box">
+                <div class="icon">✨</div>
+                <h4>EDUCATIONAL CONTENT</h4>
+            </div>
+        </div>
 
-document.getElementById("joinBtn").addEventListener("click",function(){
-fbq('track','Lead',{ value:10, currency:'INR' });
-window.location.href = tgLink;
-});
-</script>
+        <!-- Stats Row -->
+        <div class="stats-row">
+            <div class="stat-item">
+                <h3>LIVE</h3>
+                <p>UPDATES</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>COMMUNITY</p>
+            </div>
+            <div class="stat-item">
+                <h3>FREE</h3>
+                <p>JOINING</p>
+            </div>
+        </div>
 
-<div class="disclaimer">
-<strong>Disclaimer:</strong><br>
-This community is for educational and informational purposes only.
-We do not provide financial or investment advice.
-Trading in financial markets involves risk.
-Always consult a qualified financial advisor before making any investment decisions.
-</div>
+        <!-- Educational Disclaimer -->
+        <div class="disclaimer">
+            <strong>Educational Disclaimer:</strong> This channel is for educational and informational purposes only. The content shared is not financial or investment advice. Please do your own research before making any financial decision.
+        </div>
+    </div>
+
+    <!-- Script to trigger Lead event on button click -->
+    <script>
+        function trackLeadEvent() {
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
+        }
+    </script>
 
 </body>
 </html>
